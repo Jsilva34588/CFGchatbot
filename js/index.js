@@ -13,7 +13,7 @@
     cursorborder: "none"
   };
 
-  NYLM = ["Hello there I can see you on your coding course","You look amazing","yes","I want to move in to tech","Jay is not the man!", "Tim is the man!",, "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!", "Tim is the man!" "KPMG have a nice building ","Dont you ever feel like a plastic bag...","one day I will learn to code something better than this chat",")","We cant speak anymore","","roses are red violets are blue. I need to go to sleep ","Cake","What is it good for absolutely nothing"];
+  NYLM = ["Hello there I can see you on your coding course","You look amazing","yes","I want to move in to tech","Jay is the man!","KPMG havea nice building ","Dont you ever feel like a plastic bag...","one day I will learn to code something better than this chat",")","We cant speak anymore","","roses are red violets are blue. I need to go to sleep ","Cake","What is it good for absolutely nothing"];
 
   getRandomInt = function(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;

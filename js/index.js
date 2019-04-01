@@ -24,9 +24,27 @@
     $(".messages").getNiceScroll(0).resize();
     return $(".messages").getNiceScroll(0).doScrollTop(999999, 999);
   };
+
+
   get_message= function (){
-  return NYLM[getRandomInt(0, NYLM.length - 1)]
+    var get_norris = Math.random()
+    if (get_norris >= 0.5) {
+      return NYLM[getRandomInt(0, NYLM.length - 1)]
+    } else {
+      var response = '';
+      $.ajax({
+        type: "GET",
+        url: 'https://api.chucknorris.io/jokes/random',
+        async: false,
+        success: function(data){
+          response = data.value;
+        }
+      })
+      return response;
+    }
   }
+
+
   insertI = function() {
     var innerText, otvet;
     innerText = $.trim($("#texxt").val());
